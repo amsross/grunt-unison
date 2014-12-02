@@ -37,9 +37,9 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "sync",
+    "unison"
   ],
-  "dependencies": {
-    "lodash": "^2.4.1"
-  }
+  "dependencies": {}
 }
