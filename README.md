@@ -1,4 +1,4 @@
-# [grunt-unison](https://github.com/amsross/grunt-unison) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/grunt-unison.png?branch=master)](https://travis-ci.org/amsross/grunt-unison)
+# [grunt-unison](https://github.com/amsross/grunt-unison) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/grunt-unison.png?branch=master)](https://travis-ci.org/amsross/grunt-unison) [![NPM](https://nodei.co/npm/grunt-unison.png)](https://www.npmjs.org/package/grunt-unison)
 
 > runs unison to keep hosts in sync
 
@@ -105,5 +105,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
- * 2014-12-02   v0.1.1   Better logging
- * 2014-12-02   v0.1.0   Initial release
+ * 2014-12-02   v0.1.2   Initial release
