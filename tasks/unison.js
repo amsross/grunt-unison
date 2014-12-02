@@ -12,8 +12,8 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('unison', 'runs unison to keep hosts in sync', function() {
 		var options = this.options({
-				args: [],
 				verbose: false,
+				args: [],
 				src: false,
 				dest: false,
 			}),

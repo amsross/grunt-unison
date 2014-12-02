@@ -1,4 +1,4 @@
-# grunt-unison [grunt-unison](https://github.com/amsross/grunt-unison) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/grunt-unison.png?branch=master)](https://travis-ci.org/amsross/grunt-unison)
+# [grunt-unison](https://github.com/amsross/grunt-unison) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/grunt-unison.png?branch=master)](https://travis-ci.org/amsross/grunt-unison)
 
 > runs unison to keep hosts in sync
 
@@ -26,10 +26,10 @@ In your project's Gruntfile, add a section named `unison` to the data object pas
 grunt.initConfig({
   unison: {
     options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
+      verbose: false,
+      args: [],
+      src: '',
+      dest: ''
     },
   },
 });
@@ -37,47 +37,55 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.verbose
+Type: `Boolean`
+Default value: `false`
+
+Display `unison` command's output in console.
+
+#### options.args
+Type: `Array`
+Default value: `[]`
+
+An array of command-line arguments to pass to `unison`. Valid arguments are provided in the [Unison User Manual](http://www.cis.upenn.edu/~bcpierce/unison/download/releases/stable/unison-manual.html)
+
+The following arguments are added by default:
+```
+	[
+		'-auto',
+		'-batch',
+		'-confirmbigdel=false',
+		'-times'
+	]
+```
+
+#### options.src
 Type: `String`
-Default value: `',  '`
+Default value: ``
 
-A string value that is used to do something with whatever.
+The source directory to sync from.
 
-#### options.punctuation
+#### options.dest
 Type: `String`
-Default value: `'.'`
+Default value: ``
 
-A string value that is used to do something else with whatever else.
+The destination directory to sync to.
 
 ### Usage Examples
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  unison: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
 #### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+In this example, custom options are used to do sync files between the source and destination ignoring permissions and allowing for FAT drives.
 
 ```js
 grunt.initConfig({
   unison: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+    verbose: false,
+    args: [
+		'-perms 0',
+		'-fat'
+    ],
+    src: '/path/to/source',
+    dest: '/path/to/destination/'
   },
 });
 ```
