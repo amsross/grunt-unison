@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 					return false;
 				}
 				if(code === 127) {
-					grunt.log.error('Synchronization failed. Please consult unison log. (1)');
+					grunt.log.error('Synchronization failed. Please consult unison log.');
 					done(false);
 					return false;
 				}
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 						done();
 						return true;
 					} else {
-						grunt.log.error('Synchronization failed. Please consult unison log. (2)');
+						grunt.log.error('Synchronization failed. Please consult unison log.');
 						done(false);
 						return false;
 					}
