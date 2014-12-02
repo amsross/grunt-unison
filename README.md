@@ -24,14 +24,14 @@ In your project's Gruntfile, add a section named `unison` to the data object pas
 
 ```js
 grunt.initConfig({
-  unison: {
-    options: {
-      verbose: false,
-      args: [],
-      src: '',
-      dest: ''
-    },
-  },
+	unison: {
+		options: {
+			verbose: false,
+			args: [],
+			src: '/path/to/source',
+			dest: '/path/to/destination/'
+		},
+	},
 });
 ```
 
@@ -78,15 +78,17 @@ In this example, custom options are used to do sync files between the source and
 
 ```js
 grunt.initConfig({
-  unison: {
-    verbose: false,
-    args: [
-		'-perms 0',
-		'-fat'
-    ],
-    src: '/path/to/source',
-    dest: '/path/to/destination/'
-  },
+	unison: {
+		options: {
+			verbose: false,
+			args: [
+				'-perms 0',
+				'-fat'
+			],
+			src: '/path/to/source',
+			dest: '/path/to/destination/'
+		},
+	},
 });
 ```
 
