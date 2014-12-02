@@ -44,11 +44,6 @@ module.exports = function(grunt) {
 					] : []
 				}
 			}, function(error, result, code) {
-				if (error) {
-					grunt.log.error(error);
-					done(false);
-					return false;
-				}
 				if(code === 127) {
 					grunt.log.error('Synchronization failed. Please consult unison log.');
 					done(false);
@@ -61,7 +56,11 @@ module.exports = function(grunt) {
 						done();
 						return true;
 					} else {
-						grunt.log.error('Synchronization failed. Please consult unison log.');
+						if (result.stderr) {
+							grunt.log.error(result.stderr);
+						} else {
+							grunt.log.error('Synchronization failed. Please consult unison log.');
+						}
 						done(false);
 						return false;
 					}
