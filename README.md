@@ -74,7 +74,7 @@ The destination directory to sync to.
 ### Usage Examples
 
 #### Custom Options
-In this example, custom options are used to do sync files between the source and destination ignoring permissions and allowing for FAT drives.
+In this example, custom options are used to do sync files between the local source and remote destination ignoring permissions and allowing for FAT drives.
 
 ```js
 grunt.initConfig({
@@ -86,7 +86,7 @@ grunt.initConfig({
 				'-fat'
 			],
 			src: '/path/to/source',
-			dest: '/path/to/destination/'
+			dest: 'ssh://remote.host:22//absolute/path/to/destination/'
 		},
 	},
 });
