@@ -105,4 +105,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2015-01-23   v0.1.3   Don't explode if unison isn't installed
  * 2014-12-02   v0.1.2   Initial release

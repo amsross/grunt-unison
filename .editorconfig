@@ -23,4 +23,3 @@ trim_trailing_whitespace = false
 
 [*.json]
 indent_style = space
-

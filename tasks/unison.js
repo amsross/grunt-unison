@@ -45,6 +45,12 @@ module.exports = function(grunt) {
 				}
 			}, function(error, result, code) {
 				if(code === 127) {
+					// if unison is not installed, don't explode
+					if (result.stderr.search(/not found/) > -1) {
+						grunt.log.error('Unison was not found and cannot be executed.');
+						done();
+						return true;
+					}
 					grunt.log.error('Synchronization failed. Please consult unison log.');
 					done(false);
 					return false;
