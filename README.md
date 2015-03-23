@@ -1,5 +1,7 @@
 # [grunt-unison](https://github.com/amsross/grunt-unison) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/grunt-unison.png?branch=master)](https://travis-ci.org/amsross/grunt-unison) [![NPM](https://nodei.co/npm/grunt-unison.png?compact=true)](https://www.npmjs.org/package/grunt-unison)
 
+[![Join the chat at https://gitter.im/amsross/grunt-unison](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/amsross/grunt-unison?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > runs unison to keep hosts in sync
 
 ## Getting Started
