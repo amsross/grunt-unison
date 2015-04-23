@@ -43,19 +43,14 @@ Display `unison` command's output in console.
 
 #### options.args
 Type: `Array`
-Default value: `[]`
-
-An array of command-line arguments to pass to `unison`. Valid arguments are provided in the [Unison User Manual](http://www.cis.upenn.edu/~bcpierce/unison/download/releases/stable/unison-manual.html)
-
-The following arguments are added by default:
-```
-	[
+Default value: `[
 		'-auto',
 		'-batch',
 		'-confirmbigdel=false',
 		'-times'
-	]
-```
+	]`
+
+An array of command-line arguments to pass to `unison`. Valid arguments are provided in the [Unison User Manual](http://www.cis.upenn.edu/~bcpierce/unison/download/releases/stable/unison-manual.html)
 
 #### options.src
 Type: `String`
