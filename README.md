@@ -1,4 +1,4 @@
-# [grunt-unison](https://github.com/amsross/grunt-unison) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/grunt-unison.png?branch=master)](https://travis-ci.org/amsross/grunt-unison) [![NPM](https://nodei.co/npm/grunt-unison.png?compact=true)](https://www.npmjs.org/package/grunt-unison)
+# [grunt-unison](https://github.com/amsross/grunt-unison) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/grunt-unison.png?branch=master)](https://travis-ci.org/amsross/grunt-unison) [![NPM](https://nodei.co/npm/grunt-unison.png?compact=true)](https://www.npmjs.org/package/grunt-unison) [![Build Status](https://codeship.com/projects/116518/status?branch=master)](https://codeship.com/projects/116518/)
 
 > runs unison to keep hosts in sync
 
