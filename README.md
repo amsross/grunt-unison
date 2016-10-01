@@ -1,4 +1,4 @@
-# [grunt-unison](https://github.com/amsross/grunt-unison) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/grunt-unison.png?branch=master)](https://travis-ci.org/amsross/grunt-unison) [![NPM](https://nodei.co/npm/grunt-unison.png?compact=true)](https://www.npmjs.org/package/grunt-unison) [![Build Status](https://codeship.com/projects/116518/status?branch=master)](https://codeship.com/projects/116518/)
+# [grunt-unison](https://github.com/amsross/grunt-unison) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/grunt-unison.png?branch=master)](https://travis-ci.org/amsross/grunt-unison) [![NPM](https://nodei.co/npm/grunt-unison.png?compact=true)](https://www.npmjs.org/package/grunt-unison)
 
 > runs unison to keep hosts in sync
 
@@ -37,12 +37,14 @@ grunt.initConfig({
 
 #### options.verbose
 Type: `Boolean`
+
 Default value: `false`
 
 Display `unison` command's output in console.
 
 #### options.args
 Type: `Array`
+
 Default value: `[
 		'-auto',
 		'-batch',
@@ -50,10 +52,11 @@ Default value: `[
 		'-times'
 	]`
 
-An array of command-line arguments to pass to `unison`. Valid arguments are provided in the [Unison User Manual](http://www.cis.upenn.edu/~bcpierce/unison/download/releases/stable/unison-manual.html)
+An array of command-line arguments to pass to `unison`. Valid arguments are provided in the [Unison User Manual](http://www.cis.upenn.edu/~bcpierce/unison/download/releases/stable/unison-manual.html#prefs)
 
 #### options.src
 Type: `String`
+
 Default value: ``
 
 The source directory to sync from.
